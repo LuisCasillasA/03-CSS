@@ -1,0 +1,391 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.nav-bar{
+    padding: 20px 40px;
+    background-image: linear-gradient(to right, white 0%, white 50%, #e7f3fc 51%, #e7f3fc 100%);
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+}
+
+.logotipo{
+    color: #2747c5;
+    font-size: x-large;
+    text-decoration: none;
+    padding: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tab{
+    position: relative;
+    display: block;
+    padding: 12px;
+    float: left;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    color: #6d7b93;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tab-right{
+    float: right;
+}
+
+.button-primary{
+    color: white;
+    background-color: #2848c6;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+.material-icons.orange-icon{
+    color: #FB8C00;
+    background-color: #fffae9;
+    font-size: 3vw;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.material-icons.blue-icon{
+    color: #2b4bc9;
+    background-color: #e9f0fd;
+    font-size: 3vw;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.text-icon{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.5vw;
+    color: #1f3e72;
+}
+
+.img-right{
+    width: 50%;
+    float: right;
+}
+
+.title{
+    color: #1f3e72;
+    padding-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 4vw;
+    margin: 1%;
+    padding-top: 5%;
+    overflow: hidden;
+}
+
+.content{
+    color: #1f3e72;
+    padding-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    width: 35%;
+    overflow: hidden;
+}
+
+.left-space{
+    padding-left: 5%;
+}
+
+.schedule-table{
+    background-color: rgba(255,255,255, .8);
+    position: absolute;
+    width: 80%;
+    padding: 2%;
+    box-shadow: 5px 5px 8px #999;
+}
+
+.schedule-table-head{
+    color: #1f3e72;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    width: 25%;
+}
+
+.schedule-table-content{
+    font-size: 1.5vw;
+    color: #1f3e72;
+    font-weight: 900;
+    text-align: right;
+}
+
+.in-line{
+    display: flex;
+    width: 90%;
+    padding: 5%;
+}
+
+.image-line{
+    width: 25%;
+    filter: grayscale(100%);
+    opacity: 30%;
+}
+
+.card-benefits{
+    border: 2px solid #fafaff;
+    border-radius: 15px;
+    width: 20%;
+    padding: 2%;
+    margin-right: 2%;
+}
+
+.material-icons.card-icon{
+    color: #2b4bc9;
+    background-color: #e9f0fd;
+    font-size: 5vw;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 5%;
+    border-radius: 8px;
+}
+
+.card-title{
+    color: #1f3e72;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 2vw;
+}
+
+.card-content{
+    color: #1f3e72;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+}
+
+.img-left{
+    width: 40%;
+    float: left;
+}
+
+.tab-coll{
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.tab-coll input { 
+    display: none;
+}
+
+.tab-coll label {
+    position: relative;
+    display: block;
+    margin-top: 5%;
+    padding: 2.5%;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid #fafaff;
+    color: #1f3e72;
+    font-size: 2vw;
+}
+  
+.tab-coll .content-coll {
+    color: #1f3e72;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+}
+
+.tab-coll .content-coll p {
+    padding: 2.5%;
+    font-size: 1.5vw;
+}
+
+.tab-coll input:checked ~ .content-coll {
+    max-height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.tab-coll label::after {
+    display: block;  
+    content: "\25b6";
+    position: absolute;
+    right: 10px; top: 10px;
+    transition: all 0.4s;
+    color: #2b4bc9;
+}
+
+.tab-coll input:checked ~ label::after {
+    transform: rotate(90deg);
+}
+
+.collapse-box{
+    display: flow-root;
+    padding: 5%;
+    padding-top: 0;
+}
+
+.card-contact{
+    border: 2px solid #fafaff;
+    border-radius: 15px;
+    padding: 2%;
+    margin-right: 2%;
+}
+
+.card-table{
+    padding: 10%;
+    width: 100%;
+}
+
+.material-icons.card-icon-contact{
+    color: #2b4bc9;
+    background-color: #e9f0fd;
+    font-size: 3vw;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 5%;
+    border-radius: 8px;
+}
+
+.card-title-contact{
+    color: #1f3e72;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 2vw;
+    display: inline;
+}
+
+.card-content-contact{
+    color: #1f3e72;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    display: inline;
+}
+.btn-contact{
+    margin: 10%;
+    width: 80%;
+    padding: 5%;
+    background-color: #e9f0fd;
+    color: #2b4bc9;
+    border: 0;
+    border-radius: 10px;
+}
+
+.header-contact{
+    padding: 10%;
+    display: flex;
+}
+
+.footer-bar{
+    background-color: #eef3ff;
+    display: block;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 10%;
+    padding: 5%;
+}
+
+.logotipo-footer{
+    color: #2747c5;
+    font-size: x-large;
+    text-decoration: none;
+    padding-left: 7%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer div p.content{
+    padding-left: 7%;
+}
+
+footer div.width50{
+    display: inline-block;
+}
+
+.width50{
+    width: 50%;
+}
+
+.table-footer{
+    width: 100%;
+}
+
+.table-footer a{
+    font-size: large;
+    text-align: left;
+    text-decoration: none;
+    color: #1f3e72;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table-footer th{
+    text-align: left;
+}
+
+.table-footer td{
+    padding-top:  2%;
+}
+
+.terms{
+    padding-top: 10%;
+    width: 100%;
+    display: inline-block;
+}
+
+.terms-left{
+    display: inline;
+    width: 50%;
+}
+
+.terms-right{
+    float: right;
+    width: 50%;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.terms a{
+    font-size: large;
+    text-align: left;
+    text-decoration: none;
+    color: #1f3e72;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.terms .terms-right a{
+    padding-right: 5%;
+}
